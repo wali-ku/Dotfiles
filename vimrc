@@ -222,7 +222,7 @@ let g:airline_theme='base16_eighties'
 "endif
 "
 
-" colorscheme gruvbox
+"colorscheme gruvbox
 " "let g:gruvbox_italic = 1
 " let g:gruvbox_dark_theme = 'hard' 
 
@@ -485,3 +485,8 @@ endfunction
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhitespace /\s\+$/
 highlight ExtraWhitespace ctermbg=red guibg=red
+
+if has("autocmd")
+	  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+	      \| exe "normal! g'\"" | endif
+  endif

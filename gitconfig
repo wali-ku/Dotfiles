@@ -17,11 +17,9 @@
 	pop = "!f() { git format-patch HEAD~$1 && git reset --hard HEAD~$1 ; }; f"
 	drop = "reset --hard HEAD^"
 	fixup = "!f() { git commit --fixup HEAD~$1 ; }; f"
-[nvidia]
-	username = dgilhooley
 [user]
-	name = David Gilhooley
-	email = dgilhooley@nvidia.com
+	name = Waqar Ali
+	email = waqar.272@gmail.com
 [color]
 	ui = auto
 [core]
@@ -30,8 +28,8 @@
 [push]
 	default = simple
 [color]
-	ui = true 
+	ui = true
 [github]
-	user = gilhooleyd
+	user = wali-ku
 [http]
 	cookiefile = ~/.gitcookies

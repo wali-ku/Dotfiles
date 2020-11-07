@@ -9,7 +9,8 @@ if [ "`whoami`" != "root" ]; then
 	return
 fi
 
-packages=("vim" "tmux" "tree" "htop" "nmon" "trace-cmd" "kernelshark" "cscope" "ctags")
+packages=("vim" "tmux" "tree" "htop" "nmon" "trace-cmd" "kernelshark" "cscope"
+"ctags" "make" "xclip")
 
 echo -e "${G}Updating APT...${N}"
 apt update

@@ -10,7 +10,8 @@ if [ "`whoami`" != "root" ]; then
 fi
 
 packages=("vim" "tmux" "tree" "htop" "nmon" "trace-cmd" "kernelshark" "cscope"
-"ctags" "make" "xclip" "libncurses5-dev")
+"ctags" "make" "xclip" "libncurses5-dev" "meld" "tmate" "minicom"
+"python-matplotlib" "python-pip")
 
 echo -e "${G}Updating APT...${N}"
 apt update

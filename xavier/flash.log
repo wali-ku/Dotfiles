@@ -1,0 +1,718 @@
+TMAKE flash COMMAND LINE:
+ NV_BUILD_CONFIGURATION_IS_VERBOSE="0" NV_BUILD_CONFIGURATION_MAKE_OUTPUT_SYNC_MODE="target" NV_BUILD_CONFIGURATION_IS_KERNEL_STABLE="0" NV_BUILD_CONFIGURATION_HAS_QNX_LICENSE="0" NV_TARGET_BOARD="t186ref" NV_BUILD_CONFIGURATION_EMBEDDED_VARIANT="none" NV_BUILD_CONFIGURATION_IS_SAFETY="0" NV_BUILD_CONFIGURATION_IS_DEBUG="0" NV_BUILD_CONFIGURATION_IS_EXTERNAL="1" NV_BUILD_CONFIGURATION_IS_GNEXT="0" NV_OUTDIR="/home/waqara/qnx/out/embedded-foundation-t186ref-release-none" NV_SYSDIR="/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/systemimage" NV_DEBUGINFODIR="/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/debuginfo" NV_BUILD_CONFIGURATION_EMBED_DEBUG_INFO="0" NV_BUILD_TRUSTY_VARIANT="embedded-v2" NV_BUILD_CONFIGURATION_QNX_CGRAPH="0" NV_BUILD_CONFIGURATION_UMBRELLA_IS_64BIT="1" NV_PART_UMBRELLA=""  BUILD_FLAVOR=release EMBEDDED_TARGET_PLATFORM=t186ref-linux /home/waqara/qnx/embedded/tools/scripts/t186_bootburn/bootburn.sh  "-b" "e3550b03-t194a" "-B" "qspi" "-M"
+
+Execute Xavier Script
+FlashCommandLineFromUser : -b e3550b03-t194a -B qspi -M 
+Using Python scripts
+Bootburn Starting with arguments ['./bootburn.py', '-b', 'e3550b03-t194a', '-B', 'qspi', '-M']
+board is e3550b03-t194a
+
+validating parameters
+
+Check finished successfully
+Done parsing command line
+
+[bootburn]: [getListTargetsInRecovery(2999)] : Bus 001 Device 076: ID 0955:7019 NVidia Corp. 
+sh: 1: cannot create /sys/module/usbcore/parameters/autosuspend: Permission denied
+e3550b03-t194a
+board is e3550b03-t194a
+
+validating parameters
+
+Check finished successfully
+Done parsing command line
+
+Bootburn Active
+target validation is successfully completed
+[bootburnTegra-A]: [GetTargetECID(809)] : Target BR_CID: 0x080219116420f1421400000011018280
+
+[bootburnTegra-A]: [GetTargetECID(810)] : Target ECID: 0x16420f1421400000011018280
+
+[bootburnTegra-A]: [GenAdbSerialNum(481)] : ADB serial number is 2P10U5118000008G30K0
+[bootburnTegra-A]: [CheckForDeviceType(877)] : Detected internal engineering device type. Setting device type to internal
+[bootburnTegra-A]: [SendAndBootAppletSigned(2167)] : Sending MB1 & Applet
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(314)] : 
+
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(315)] : ############## Host machine info ##############
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(316)] : Host system Linux
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(317)] : Host node flash-waqara-20210205T074606691
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(318)] : Host release 4.15.0-123-generic
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(319)] : Host version #126~16.04.1-Ubuntu SMP Wed Oct 21 13:48:05 UTC 2020
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(320)] : Host machine x86_64
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(321)] : Host processor x86_64
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(322)] : Target ChipId 0x19  ChipVersion 0x2
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(323)] : ###############################################
+[bootburnTegra-A]: [DisplayHostInfoAndPaths(326)] : 
+
+****** QB Image path: qb_cpu.bin
+[bootburnTegra-A]: [CopyAndPreprocessQbBinaries(1338)] : qb_dtb :: /home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/quickboot/qb-t18x-partner/_out/t19x/images/t19x-refs.dtbqb_bin :: /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/qb_cpu.bin
+[bootburnTegra-A]: [PreserveTargetSkuInfo(1535)] : Preserving SkuInfo from Target
+[bootburnTegra-A]: [SendAndBootMB1Signed(2138)] : Sending MB1
+[bootburnTegra-A]: [GenerateImage(2208)] : Generating Flashing-RCM Images
+[bootburnTegra-A]: [BootRCMImage(2627)] : Sending Blob for RCM to target
+****** QB Image path: qb_cpu.bin
+[bootburnTegra-A]: [CopyAndPreprocessQbBinaries(1338)] : qb_dtb :: /home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/quickboot/qb-t18x-partner/_out/t19x/images/t19x-refs.dtbqb_bin :: /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/qb_cpu.bin
+[bootburnTegra-A]: [GenerateImage(2228)] : Generating Flash Images, this may take a few minutes
+[bootburnTegra-A]: [executeShellCommand(156)] : shell command -- /home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/qb_flashtools/nvimagegen  --bct bct_BR.bct --mb1bct bct_MB1.bct --chip 0x19 --chipver A02 --membct membct_0.bct membct_1.bct membct_2.bct membct_3.bct  --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg --man man_0b69eb40d14.txt --showpt failed
+[bootburnTegra-A]: [executeShellCommand(158)] : {'cmd': [u'/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/qb_flashtools/nvimagegen', u'--bct', u'bct_BR.bct', u'--mb1bct', u'bct_MB1.bct', u'--chip', u'0x19', u'--chipver', u'A02', u'--membct', u'membct_0.bct', u'membct_1.bct', u'membct_2.bct', u'membct_3.bct', u'--cfg', u'/home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg', u'--man', u'man_0b69eb40d14.txt', u'--showpt'], 'output': "Sha saved in temp_buffer_file.bin.sha\nstart nvimagegen\narguments: /home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/qb_flashtools/nvimagegen --bct bct_BR.bct --mb1bct bct_MB1.bct --chip 0x19 --chipver A02 --membct membct_0.bct membct_1.bct membct_2.bct membct_3.bct --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg --man man_0b69eb40d14.txt --showpt\nLoad MB1 BCT from file\nName=bct Id=1 FileName=(null) Size=524288 IsPersistent=0\nName=A_mb1-bootloader Id=2 FileName=mb1.bin Size=262144 IsPersistent=0\nName=B_mb1-bootloader Id=3 FileName=mb1.bin Size=262144 IsPersistent=0\nName=pt Id=4 FileName=(null) Size=524288 IsPersistent=0\nName=A_qspi_chain Id=5 FileName=(null) Size=16777216 IsPersistent=0\nName=B_qspi_chain Id=6 FileName=(null) Size=16777216 IsPersistent=0\nName=A_emmc_chain Id=7 FileName=(null) Size=55972986880 IsPersistent=1\nName=B_emmc_chain Id=8 FileName=(null) Size=55972986880 IsPersistent=1\nName=pers-gos1 Id=9 FileName=(null) Size=4294967296 IsPersistent=1\nName=pers-ota Id=10 FileName=/dev/null Size=268435456 IsPersistent=0\nName=ota-pkg Id=11 FileName=(null) Size=172185616384 IsPersistent=1\nName=gos1-ufs Id=12 FileName=(null) Size=76922486784 IsPersistent=1\nName=A_qspi_1_chain Id=13 FileName=(null) Size=33554432 IsPersistent=1\nName=B_qspi_1_chain Id=14 FileName=(null) Size=33554432 IsPersistent=1\nInitialized partitions successfully\nLoad and validate BR BCT from file\nMB1 BCT not in top-level cfg, looking for sub cfgs that contain it\nPregenerate PT for sub cfg with prefix A\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nstart nvimagegen\narguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1_sub1.cfg --prefix A_1 --chip 0x19 --chipver A02 --guestcfg 1 --ptonly\nAuthenticate Group 1, NumberOfBins 3\n  PartName kernel\n  PartName kernel-dtb\n  PartName ramdisk\nName=pt Id=1 FileName=(null) Size=262144 IsPersistent=0\nName=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-linux-t186ref-release/nvidia/kernel/arch/arm64/boot/dts/tegra194-e3550-0001-b03-A-linux-driveav-vm1.dtb Size=262144 IsPersistent=0\nPartition 2 kernel-dtb: BootCompHdrPartId 3\nName=kernel Id=3 FileName=(null) Size=18612224 IsPersistent=0\nPartition 3 kernel: BootCompHdrPartId 3\nName=ramdisk Id=4 FileName=(null) Size=4194304 IsPersistent=0\nPartition 4 ramdisk: BootCompHdrPartId 3\nName=gos1-gp1 Id=5 FileName=(null) Size=262144 IsPersistent=0\nName=gos1-fs Id=6 FileName=(null) Size=32221167616 IsPersistent=0\nName=gos1-gpt Id=7 FileName=(null) Size=262144 IsPersistent=0\nGPT Device size 32245809152. start location 32245792256\nInitialized partitions successfully\nCreated PT successfully A_1_1_PT.bin\nCreated partitions successfully\nfinish nvimagegen\nError Code 0\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nstart nvimagegen\narguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1_sub2.cfg --prefix A_2 --chip 0x19 --chipver A02 --guestcfg 2 --ptonly\nAuthenticate Group 1, NumberOfBins 2\n  PartName kernel\n  PartName kernel-dtb\nName=pt Id=1 FileName=(null) Size=262144 IsPersistent=0\nName=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/hypervisor-t194/linux/e3550b03-t194a/t194-update-service.dtb Size=262144 IsPersistent=0\nPartition 2 kernel-dtb: BootCompHdrPartId 3\nName=kernel Id=3 FileName=(null) Size=16777216 IsPersistent=0\nPartition 3 kernel: BootCompHdrPartId 3\nInitialized partitions successfully\nCreated PT successfully A_2_1_PT.bin\nCreated partitions successfully\nfinish nvimagegen\nError Code 0\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nstart nvimagegen\narguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --prefix A --chip 0x19 --chipver A02 --ptonly\nAuthenticate Group 1, NumberOfBins 3\n  PartName mb1-bct\n  PartName spe-fw\n  PartName mb2-bootloader\nAuthenticate Group 2, NumberOfBins 3\n  PartName mts-preboot\n  PartName mts-mce\n  PartName mts-bootpack\nAuthenticate Group 3, NumberOfBins 3\n  PartName sce-fw\n  PartName secure-os\n  PartName rce-fw\nAuthenticate Group 4, NumberOfBins 3\n  PartName bpmp-fw\n  PartName cpu-bootloader\n  PartName bpmp-fw-dtb\nName=pt Id=1 FileName=(null) Size=262144 IsPersistent=0\nName=mb1-bct Id=2 FileName=(null) Size=262144 IsPersistent=0\nPartition 2 mb1-bct: BootCompHdrPartId 2\nName=mem-bct Id=3 FileName=(null) Size=262144 IsPersistent=0\nName=spe-fw Id=4 FileName=/home/waqara/qnx/firmware-t19x/spe/t194/spe.bin Size=262144 IsPersistent=0\nPartition 4 spe-fw: BootCompHdrPartId 2\nName=mb2-bootloader Id=5 FileName=nvtboot.bin Size=262144 IsPersistent=0\nPartition 5 mb2-bootloader: BootCompHdrPartId 2\nName=mts-preboot Id=6 FileName=preboot_c10_grp.bin Size=262144 IsPersistent=0\nPartition 6 mts-preboot: BootCompHdrPartId 6\nName=mts-mce Id=7 FileName=mce_c10_grp.bin Size=524288 IsPersistent=0\nPartition 7 mts-mce: BootCompHdrPartId 6\nName=mts-bootpack Id=8 FileName=mts_c10_cr.bin Size=4194304 IsPersistent=0\nPartition 8 mts-bootpack: BootCompHdrPartId 6\nName=cpu-bootloader Id=9 FileName=qb_cpu.bin Size=524288 IsPersistent=0\nPartition 9 cpu-bootloader: BootCompHdrPartId 11\nName=secure-os Id=10 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/trusty.t194//tos.img Size=3145728 IsPersistent=0\nPartition 10 secure-os: BootCompHdrPartId 13\nName=bpmp-fw Id=11 FileName=/home/waqara/qnx/firmware-t19x/bpmp/t194/bpmp-2.bin Size=1048576 IsPersistent=0\nPartition 11 bpmp-fw: BootCompHdrPartId 11\nName=bpmp-fw-dtb Id=12 FileName=bpmp.dtb Size=786432 IsPersistent=0\nPartition 12 bpmp-fw-dtb: BootCompHdrPartId 11\nName=sce-fw Id=13 FileName=/home/waqara/qnx/firmware-t19x/sce/t194/sce-fw.bin Size=524288 IsPersistent=0\nPartition 13 sce-fw: BootCompHdrPartId 13\nName=rce-fw Id=14 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/camera/rce_fw/camera-rtcpu-t194-rce-hv-single-vm.img Size=1048576 IsPersistent=0\nPartition 14 rce-fw: BootCompHdrPartId 13\nName=eks Id=15 FileName=/home/waqara/qnx/embedded/tools-t19x/boards/t194ref/trusty.t194/eks_nokey.dat Size=262144 IsPersistent=0\nName=gos1 Id=16 FileName=(null) Size=32245809152 IsPersistent=0\nName=kernel Id=17 FileName=(null) Size=10485760 IsPersistent=0\nName=safety Id=18 FileName=(null) Size=18874368 IsPersistent=1\nName=update Id=19 FileName=(null) Size=17825792 IsPersistent=0\nName=usr1-ota Id=20 FileName=(null) Size=1073741824 IsPersistent=1\nName=usr1-safety Id=21 FileName=(null) Size=4294967296 IsPersistent=1\nName=usr2-ota Id=22 FileName=(null) Size=1073741824 IsPersistent=1\nName=gos_norfs-dummy Id=23 FileName=(null) Size=16777216 IsPersistent=1\nInitialized partitions successfully\nCreated PT successfully A_1_PT.bin\nCreated partitions successfully\nfinish nvimagegen\nError Code 0\nPregenerate PT for sub cfg with prefix B\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nstart nvimagegen\narguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2_sub1.cfg --prefix B_1 --chip 0x19 --chipver A02 --guestcfg 1 --ptonly\nAuthenticate Group 1, NumberOfBins 3\n  PartName kernel\n  PartName kernel-dtb\n  PartName ramdisk\nName=pt Id=1 FileName=(null) Size=262144 IsPersistent=0\nName=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-linux-t186ref-release/nvidia/kernel/arch/arm64/boot/dts/tegra194-e3550-0001-b03-A-linux-driveav-vm1.dtb Size=262144 IsPersistent=0\nPartition 2 kernel-dtb: BootCompHdrPartId 3\nName=kernel Id=3 FileName=(null) Size=18612224 IsPersistent=0\nPartition 3 kernel: BootCompHdrPartId 3\nName=ramdisk Id=4 FileName=(null) Size=4194304 IsPersistent=0\nPartition 4 ramdisk: BootCompHdrPartId 3\nName=gos1-gp1 Id=5 FileName=(null) Size=262144 IsPersistent=0\nName=gos1-fs Id=6 FileName=(null) Size=32221167616 IsPersistent=0\nName=gos1-gpt Id=7 FileName=(null) Size=262144 IsPersistent=0\nGPT Device size 32245809152. start location 32245792256\nInitialized partitions successfully\nCreated PT successfully B_1_1_PT.bin\nCreated partitions successfully\nfinish nvimagegen\nError Code 0\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nstart nvimagegen\narguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2_sub2.cfg --prefix B_2 --chip 0x19 --chipver A02 --guestcfg 2 --ptonly\nAuthenticate Group 1, NumberOfBins 2\n  PartName kernel\n  PartName kernel-dtb\nName=pt Id=1 FileName=(null) Size=262144 IsPersistent=0\nName=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/hypervisor-t194/linux/e3550b03-t194a/t194-update-service.dtb Size=262144 IsPersistent=0\nPartition 2 kernel-dtb: BootCompHdrPartId 3\nName=kernel Id=3 FileName=(null) Size=16777216 IsPersistent=0\nPartition 3 kernel: BootCompHdrPartId 3\nInitialized partitions successfully\nCreated PT successfully B_2_1_PT.bin\nCreated partitions successfully\nfinish nvimagegen\nError Code 0\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nstart nvimagegen\narguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2.cfg --prefix B --chip 0x19 --chipver A02 --ptonly\nAuthenticate Group 1, NumberOfBins 3\n  PartName mb1-bct\n  PartName spe-fw\n  PartName mb2-bootloader\nAuthenticate Group 2, NumberOfBins 3\n  PartName mts-preboot\n  PartName mts-mce\n  PartName mts-bootpack\nAuthenticate Group 3, NumberOfBins 3\n  PartName sce-fw\n  PartName secure-os\n  PartName rce-fw\nAuthenticate Group 4, NumberOfBins 3\n  PartName bpmp-fw\n  PartName cpu-bootloader\n  PartName bpmp-fw-dtb\nName=pt Id=1 FileName=(null) Size=262144 IsPersistent=0\nName=mb1-bct Id=2 FileName=(null) Size=262144 IsPersistent=0\nPartition 2 mb1-bct: BootCompHdrPartId 2\nName=mem-bct Id=3 FileName=(null) Size=262144 IsPersistent=0\nName=spe-fw Id=4 FileName=/home/waqara/qnx/firmware-t19x/spe/t194/spe.bin Size=262144 IsPersistent=0\nPartition 4 spe-fw: BootCompHdrPartId 2\nName=mb2-bootloader Id=5 FileName=nvtboot.bin Size=262144 IsPersistent=0\nPartition 5 mb2-bootloader: BootCompHdrPartId 2\nName=mts-preboot Id=6 FileName=preboot_c10_grp.bin Size=262144 IsPersistent=0\nPartition 6 mts-preboot: BootCompHdrPartId 6\nName=mts-mce Id=7 FileName=mce_c10_grp.bin Size=524288 IsPersistent=0\nPartition 7 mts-mce: BootCompHdrPartId 6\nName=mts-bootpack Id=8 FileName=mts_c10_cr.bin Size=4194304 IsPersistent=0\nPartition 8 mts-bootpack: BootCompHdrPartId 6\nName=cpu-bootloader Id=9 FileName=qb_cpu.bin Size=524288 IsPersistent=0\nPartition 9 cpu-bootloader: BootCompHdrPartId 11\nName=secure-os Id=10 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/trusty.t194//tos.img Size=3145728 IsPersistent=0\nPartition 10 secure-os: BootCompHdrPartId 13\nName=bpmp-fw Id=11 FileName=/home/waqara/qnx/firmware-t19x/bpmp/t194/bpmp-2.bin Size=1048576 IsPersistent=0\nPartition 11 bpmp-fw: BootCompHdrPartId 11\nName=bpmp-fw-dtb Id=12 FileName=bpmp.dtb Size=786432 IsPersistent=0\nPartition 12 bpmp-fw-dtb: BootCompHdrPartId 11\nName=sce-fw Id=13 FileName=/home/waqara/qnx/firmware-t19x/sce/t194/sce-fw.bin Size=524288 IsPersistent=0\nPartition 13 sce-fw: BootCompHdrPartId 13\nName=rce-fw Id=14 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/camera/rce_fw/camera-rtcpu-t194-rce-hv-single-vm.img Size=1048576 IsPersistent=0\nPartition 14 rce-fw: BootCompHdrPartId 13\nName=eks Id=15 FileName=/home/waqara/qnx/embedded/tools-t19x/boards/t194ref/trusty.t194/eks_nokey.dat Size=262144 IsPersistent=0\nName=gos1 Id=16 FileName=(null) Size=32245809152 IsPersistent=0\nName=kernel Id=17 FileName=(null) Size=10485760 IsPersistent=0\nName=safety Id=18 FileName=(null) Size=18874368 IsPersistent=1\nName=update Id=19 FileName=(null) Size=17825792 IsPersistent=0\nName=usr1-ota Id=20 FileName=(null) Size=1073741824 IsPersistent=1\nName=usr1-safety Id=21 FileName=(null) Size=4294967296 IsPersistent=1\nName=usr2-ota Id=22 FileName=(null) Size=1073741824 IsPersistent=1\nName=gos_norfs-dummy Id=23 FileName=(null) Size=16777216 IsPersistent=1\nInitialized partitions successfully\nCreated PT successfully B_1_PT.bin\nCreated partitions successfully\nfinish nvimagegen\nError Code 0\nProgram MB1 BCT\nMB1_BCT: Checking sub cfgs for partitions\nFound primary sub cfg\nFound valid PT at copy #8\n:[I]: Successfully loaded PT from file A_1_PT.bin\nchecking sub cfg's partition 1 name=pt adx= 0size= 262144 IsPersistent=0\nchecking sub cfg's partition 2 name=mb1-bct adx= 262144size= 262144 IsPersistent=0\nchecking sub cfg's partition 3 name=mem-bct adx= 524288size= 262144 IsPersistent=0\nMB1_BCT: localadx= 524288, globaladx= 2097152, startblock= 4096 size= 262144\nchecking sub cfg's partition 4 name=spe-fw adx= 786432size= 262144 IsPersistent=0\nMB1_BCT: selected FW field for partition 19\nMB1_BCT: localadx= 786432, globaladx= 2359296, startblock= 4608 size= 262144\nchecking sub cfg's partition 5 name=mb2-bootloader adx= 1048576size= 262144 IsPersistent=0\nMB1_BCT: selected FW field for partition 25\nMB1_BCT: localadx= 1048576, globaladx= 2621440, startblock= 5120 size= 262144\nchecking sub cfg's partition 6 name=mts-preboot adx= 1310720size= 262144 IsPersistent=0\nMB1_BCT: selected FW field for partition 20\nMB1_BCT: localadx= 1310720, globaladx= 2883584, startblock= 5632 size= 262144\nchecking sub cfg's partition 7 name=mts-mce adx= 1572864size= 524288 IsPersistent=0\nMB1_BCT: selected FW field for partition 36\nMB1_BCT: localadx= 1572864, globaladx= 3145728, startblock= 6144 size= 524288\nchecking sub cfg's partition 8 name=mts-bootpack adx= 2097152size= 4194304 IsPersistent=0\nMB1_BCT: selected FW field for partition 21\nMB1_BCT: localadx= 2097152, globaladx= 3670016, startblock= 7168 size= 4194304\nchecking sub cfg's partition 9 name=cpu-bootloader adx= 6291456size= 524288 IsPersistent=0\nchecking sub cfg's partition 10 name=secure-os adx= 6815744size= 3145728 IsPersistent=0\nchecking sub cfg's partition 11 name=bpmp-fw adx= 9961472size= 1048576 IsPersistent=0\nchecking sub cfg's partition 12 name=bpmp-fw-dtb adx= 11010048size= 786432 IsPersistent=0\nchecking sub cfg's partition 13 name=sce-fw adx= 11796480size= 524288 IsPersistent=0\nchecking sub cfg's partition 14 name=rce-fw adx= 12320768size= 1048576 IsPersistent=0\nchecking sub cfg's partition 15 name=eks adx= 13369344size= 262144 IsPersistent=0\nchecking sub cfg's partition 16 name=gos1 adx= 0size= 32245809152 IsPersistent=0\nchecking sub cfg's partition 17 name=kernel adx= 32245809152size= 10485760 IsPersistent=0\nchecking sub cfg's partition 18 name=safety adx= 32256294912size= 18874368 IsPersistent=1\nchecking sub cfg's partition 19 name=update adx= 32275169280size= 17825792 IsPersistent=0\nchecking sub cfg's partition 20 name=usr1-ota adx= 32292995072size= 1073741824 IsPersistent=1\nchecking sub cfg's partition 21 name=usr1-safety adx= 33366736896size= 4294967296 IsPersistent=1\nchecking sub cfg's partition 22 name=usr2-ota adx= 37661704192size= 1073741824 IsPersistent=1\nchecking sub cfg's partition 23 name=gos_norfs-dummy adx= 0size= 16777216 IsPersistent=1\nFound recovery sub cfg\nFound valid PT at copy #8\n:[I]: Successfully loaded PT from file B_1_PT.bin\nchecking sub cfg's partition 1 name=pt adx= 0size= 262144 IsPersistent=0\nchecking sub cfg's partition 2 name=mb1-bct adx= 262144size= 262144 IsPersistent=0\nchecking sub cfg's partition 3 name=mem-bct adx= 524288size= 262144 IsPersistent=0\nMB1_BCT: localadx= 524288, globaladx= 18874368, startblock= 36864 size= 262144\nchecking sub cfg's partition 4 name=spe-fw adx= 786432size= 262144 IsPersistent=0\nMB1_BCT: selected FW field for partition 19\nMB1_BCT: localadx= 786432, globaladx= 19136512, startblock= 37376 size= 262144\nchecking sub cfg's partition 5 name=mb2-bootloader adx= 1048576size= 262144 IsPersistent=0\nMB1_BCT: selected FW field for partition 25\nMB1_BCT: localadx= 1048576, globaladx= 19398656, startblock= 37888 size= 262144\nchecking sub cfg's partition 6 name=mts-preboot adx= 1310720size= 262144 IsPersistent=0\nMB1_BCT: selected FW field for partition 20\nMB1_BCT: localadx= 1310720, globaladx= 19660800, startblock= 38400 size= 262144\nchecking sub cfg's partition 7 name=mts-mce adx= 1572864size= 524288 IsPersistent=0\nMB1_BCT: selected FW field for partition 36\nMB1_BCT: localadx= 1572864, globaladx= 19922944, startblock= 38912 siSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nSha saved in temp_buffer_file.sha\nstart nvimagegen\narguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1_sub1.cfg --prefix A_1 --chip 0x19 --chipver A02 --mb1bct bct_MB1.bct --guestcfg 1 --showpt --man man_A_1.txt\nLoad MB1 BCT from file\nAuthenticate Group 1, NumberOfBins 3\n  PartName kernel\n  PartName kernel-dtb\n  PartName ramdisk\nName=pt Id=1 FileName=(null) Size=262144 IsPersistent=0\nName=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-linux-t186ref-release/nvidia/kernel/arch/arm64/boot/dts/tegra194-e3550-0001-b03-A-linux-driveav-vm1.dtb Size=262144 IsPersistent=0\nPartition 2 kernel-dtb: BootCompHdrPartId 3\nName=kernel Id=3 FileName=(null) Size=18612224 IsPersistent=0\nPartition 3 kernel: BootCompHdrPartId 3\nName=ramdisk Id=4 FileName=(null) Size=4194304 IsPersistent=0\nPartition 4 ramdisk: BootCompHdrPartId 3\nName=gos1-gp1 Id=5 FileName=(null) Size=262144 IsPersistent=0\nName=gos1-fs Id=6 FileName=(null) Size=32221167616 IsPersistent=0\nName=gos1-gpt Id=7 FileName=(null) Size=262144 IsPersistent=0\nGPT Device size 32245809152. start location 32245792256\n:[D]: ratchet value for kernel-dtb is 0 at index 40\n:[D]: ratchet value for kernel is 0 at index 38\n:[D]: ratchet value for ramdisk is 0 at index 39\nInitialized partitions successfully\nGP1 found on 0 deviceId 3 Instance\nCreating GPT...Done\n:[E]: UpdateKernelDtb                    :  687: Error FileNotFound (0x19)\n:[E]: \nErr: DTB file /home/waqara/qnx/out/embedded-linux-t186ref-release/nvidia/kernel/arch/arm64/boot/dts/tegra194-e3550-0001-b03-A-linux-driveav-vm1.dtb for partition kernel-dtb was not found.  Make sure \nthe path or name of DTB file is correct in the config file\n\nUpdateKernelDtb: Failed to update kernel dtb, err: 0x19\n:[E]: QbFindAndCreateImages              : 1281: Error FileNotFound (0x19)\n:[E]: Failed to update kernel DTB\n:[E]: QbCreatePartition                  : 1674: Error FileNotFound (0x19)\n:[E]: failed to find and create images\nFailed to create partitions\n:[E]: nvimagegen                         :  892: Error FileNotFound (0x19)\n:[E]: Creating Partition images failed\nfinish nvimagegen\nError Code 19\nnvimagegen usage:\n\nnvimagegen --bct <BCT_FILE> --mb1bct <MB1_BCT_FILE> --cfg <CFG_FILE>\n  --bct <file>\n\tOptional, bct file(file), which will be updated with ODM-Data,\n\tPT StartInfo if provided.\n\tThis update happens in unsign/unencrypted section of BCT\n  --mb1bct <file>\n\tOptional, mb1_bct file(file), which will be updated with Firmware info.\n\tThis update happens in unsign/unencrypted section of MB1_BCT\n  --membct <file1> <file2> <file3> <file4>\n\tOptional, mem_bct file(file)\n  --chip <Chip ID>\n\tMandatory, Specifies chip id. The chip id of t18x is 0x18.\n  --chipver <Chip version>\n\tMandatory, Specifies chip version.\n  --cfg <file>\n\tOptional, input cfg file containing partition layout used while flashing\n  --pkc <file>\n\tOptional, pkc key used for signing the binary\n  --ekc <file>\n\tOptional, global common encryption key used for encrypting the binary\n  --showpt\n\tOptional, display the Partition Table on the screen.\n  --rcm\n\tOptional, create images need for RCM Boot.\n  --skipfs\n\tOptional, Skip filesystem partitions.\n  --part <partition name>\n\tOptional, input partition names and only the binary of the partitions\n\twill be generated.\n  --dtodmdata <odm-data parameter>\n\tOptional, Specifies the dt odm-data parameter\n  --signbin <file> <magic id>\n\tOptional, Specifies a binary for signing.\n  --parentcfg <file>\n\tOptional, parent cfg file location\n  --prefix <name>\n\tOptional, Name to be prepended to the images generated.\n  --guestcfg\n\tOptional, Flag to indicate that this is guest configuration along with guest id.\n  --setvmax <Board Vmax>\n\tOptional, Specifies the board max micro voltage.\n  --ecid\n\tOptional, ECID of target to be used in conjunction with --signbin.\n --skipchain\n\tOptional, skipchain don't generate chain specified\nstart nvimagegen\narguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --prefix A --chip 0x19 --chipver A02 --mb1bct bct_MB1.bct --membct membct_0.bct membct_1.bct membct_2.bct membct_3.bct --showpt --man man_A.txt\nLoad MB1 BCT from file\nAuthenticate Group 1, NumberOfBins 3\n  PartName mb1-bct\n  PartName spe-fw\n  PartName mb2-bootloader\nAuthenticate Group 2, NumberOfBins 3\n  PartName mts-preboot\n  PartName mts-mce\n  PartName mts-bootpack\nAuthenticate Group 3, NumberOfBins 3\n  PartName sce-fw\n  PartName secure-os\n  PartName rce-fw\nAuthenticate Group 4, NumberOfBins 3\n  PartName bpmp-fw\n  PartName cpu-bootloader\n  PartName bpmp-fw-dtb\nName=pt Id=1 FileName=(null) Size=262144 IsPersistent=0\nName=mb1-bct Id=2 FileName=(null) Size=262144 IsPersistent=0\nPartition 2 mb1-bct: BootCompHdrPartId 2\nName=mem-bct Id=3 FileName=(null) Size=262144 IsPersistent=0\nName=spe-fw Id=4 FileName=/home/waqara/qnx/firmware-t19x/spe/t194/spe.bin Size=262144 IsPersistent=0\nPartition 4 spe-fw: BootCompHdrPartId 2\nName=mb2-bootloader Id=5 FileName=nvtboot.bin Size=262144 IsPersistent=0\nPartition 5 mb2-bootloader: BootCompHdrPartId 2\nName=mts-preboot Id=6 FileName=preboot_c10_grp.bin Size=262144 IsPersistent=0\nPartition 6 mts-preboot: BootCompHdrPartId 6\nName=mts-mce Id=7 FileName=mce_c10_grp.bin Size=524288 IsPersistent=0\nPartition 7 mts-mce: BootCompHdrPartId 6\nName=mts-bootpack Id=8 FileName=mts_c10_cr.bin Size=4194304 IsPersistent=0\nPartition 8 mts-bootpack: BootCompHdrPartId 6\nName=cpu-bootloader Id=9 FileName=qb_cpu.bin Size=524288 IsPersistent=0\nPartition 9 cpu-bootloader: BootCompHdrPartId 11\nName=secure-os Id=10 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/trusty.t194//tos.img Size=3145728 IsPersistent=0\nPartition 10 secure-os: BootCompHdrPartId 13\nName=bpmp-fw Id=11 FileName=/home/waqara/qnx/firmware-t19x/bpmp/t194/bpmp-2.bin Size=1048576 IsPersistent=0\nPartition 11 bpmp-fw: BootCompHdrPartId 11\nName=bpmp-fw-dtb Id=12 FileName=bpmp.dtb Size=786432 IsPersistent=0\nPartition 12 bpmp-fw-dtb: BootCompHdrPartId 11\nName=sce-fw Id=13 FileName=/home/waqara/qnx/firmware-t19x/sce/t194/sce-fw.bin Size=524288 IsPersistent=0\nPartition 13 sce-fw: BootCompHdrPartId 13\nName=rce-fw Id=14 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/camera/rce_fw/camera-rtcpu-t194-rce-hv-single-vm.img Size=1048576 IsPersistent=0\nPartition 14 rce-fw: BootCompHdrPartId 13\nName=eks Id=15 FileName=/home/waqara/qnx/embedded/tools-t19x/boards/t194ref/trusty.t194/eks_nokey.dat Size=262144 IsPersistent=0\nName=gos1 Id=16 FileName=(null) Size=32245809152 IsPersistent=0\nName=kernel Id=17 FileName=(null) Size=10485760 IsPersistent=0\nName=safety Id=18 FileName=(null) Size=18874368 IsPersistent=1\nName=update Id=19 FileName=(null) Size=17825792 IsPersistent=0\nName=usr1-ota Id=20 FileName=(null) Size=1073741824 IsPersistent=1\nName=usr1-safety Id=21 FileName=(null) Size=4294967296 IsPersistent=1\nName=usr2-ota Id=22 FileName=(null) Size=1073741824 IsPersistent=1\nName=gos_norfs-dummy Id=23 FileName=(null) Size=16777216 IsPersistent=1\n:[D]: ratchet value for mb1-bct is 0 at index 1\n:[D]: ratchet value for mem-bct is 0 at index 7\n:[D]: ratchet value for spe-fw is 0 at index 2\n:[D]: ratchet value for mb2-bootloader is 0 at index 6\n:[D]: ratchet value for cpu-bootloader is 0 at index 11\n:[D]: ratchet value for secure-os is 0 at index 12\n:[D]: ratchet value for bpmp-fw is 0 at index 14\n:[D]: ratchet value for bpmp-fw-dtb is 0 at index 15\n:[D]: ratchet value for sce-fw is 0 at index 16\n:[D]: ratchet value for rce-fw is 0 at index 17\n:[D]: ratchet value for eks is 0 at index 13\n:[D]: ratchet value for kernel is 0 at index 30\nInitialized partitions successfully\n:[E]: QbFindAndCreateImages              : 1255: Error (Unknown) (0xff00)\n:[E]: Failed to exectute nvimagegen\n:[E]: QbCreatePartition                  : 1674: Error (Unknown) (0xff00)\n:[E]: failed to find and create images\nFailed to create partitions\n:[E]: nvimagegen                         :  892: Error (Unknown) (0xff00)\n:[E]: Creating Partition images failed\nfinish nvimagegen\nError Code ff00\nnvimagegen usage:\n\nnvimagegen --bct <BCT_FILE> --mb1bct <MB1_BCT_FILE> --cfg <CFG_FILE>\n  --bct <file>\n\tOptional, bct file(file), which will be updated with ODM-Data,\n\tPT StartInfo if provided.\n\tThis update happens in unsign/unencrypted section of BCT\n  --mb1bct <file>\n\tOptional, mb1_bct file(file), which will be updated with Firmware info.\n\tThis update happens in unsign/unencrypted section of MB1_BCT\n  --membct <file1> <file2> <file3> <file4>\n\tOptional, mem_bct file(file)\n  --chip <Chip ID>\n\tMandatory, Specifies chip id. The chip id of t18x is 0x18.\n  --chipver <Chip version>\n\tMandatory, Specifies chip version.\n  --cfg <file>\n\tOptional, input cfg file containing partition layout used while flashing\n  --pkc <file>\n\tOptional, pkc key used for signing the binary\n  --ekc <file>\n\tOptional, global common encryption key used for encrypting the binary\n  --showpt\n\tOptional, display the Partition Table on the screen.\n  --rcm\n\tOptional, create images need for RCM Boot.\n  --skipfs\n\tOptional, Skip filesystem partitions.\n  --part <partition name>\n\tOptional, input partition names and only the binary of the partitions\n\twill be generated.\n  --dtodmdata <odm-data parameter>\n\tOptional, Specifies the dt odm-data parameter\n  --signbin <file> <magic id>\n\tOptional, Specifies a binary for signing.\n  --parentcfg <file>\n\tOptional, parent cfg file location\n  --prefix <name>\n\tOptional, Name to be prepended to the images generated.\n  --guestcfg\n\tOptional, Flag to indicate that this is guest configuration along with guest id.\n  --setvmax <Board Vmax>\n\tOptional, Specifies the board max micro voltage.\n  --ecid\n\tOptional, ECID of target to be used in conjunction with --signbin.\n --skipchain\n\tOptional, skipchain don't generate chain specified\nze= 524288\nchecking sub cfg's partition 8 name=mts-bootpack adx= 2097152size= 4194304 IsPersistent=0\nMB1_BCT: selected FW field for partition 21\nMB1_BCT: localadx= 2097152, globaladx= 20447232, startblock= 39936 size= 4194304\nchecking sub cfg's partition 9 name=cpu-bootloader adx= 6291456size= 524288 IsPersistent=0\nchecking sub cfg's partition 10 name=secure-os adx= 6815744size= 3145728 IsPersistent=0\nchecking sub cfg's partition 11 name=bpmp-fw adx= 9961472size= 1048576 IsPersistent=0\nchecking sub cfg's partition 12 name=bpmp-fw-dtb adx= 11010048size= 786432 IsPersistent=0\nchecking sub cfg's partition 13 name=sce-fw adx= 11796480size= 524288 IsPersistent=0\nchecking sub cfg's partition 14 name=rce-fw adx= 12320768size= 1048576 IsPersistent=0\nchecking sub cfg's partition 15 name=eks adx= 13369344size= 262144 IsPersistent=0\nchecking sub cfg's partition 16 name=gos1 adx= 0size= 32245809152 IsPersistent=0\nchecking sub cfg's partition 17 name=kernel adx= 32245809152size= 10485760 IsPersistent=0\nchecking sub cfg's partition 18 name=safety adx= 32256294912size= 18874368 IsPersistent=1\nchecking sub cfg's partition 19 name=update adx= 32275169280size= 17825792 IsPersistent=0\nchecking sub cfg's partition 20 name=usr1-ota adx= 32292995072size= 1073741824 IsPersistent=1\nchecking sub cfg's partition 21 name=usr1-safety adx= 33366736896size= 4294967296 IsPersistent=1\nchecking sub cfg's partition 22 name=usr2-ota adx= 37661704192size= 1073741824 IsPersistent=1\nchecking sub cfg's partition 23 name=gos_norfs-dummy adx= 0size= 16777216 IsPersistent=1\nUpdating MB1 BCT to file\n:[I]: QbPartMgrGetIdByName: Could not find a match for given partition name: mb1-bct\n:[I]: QbPartMgrGetIdByName: Could not find a match for given partition name: mb1-bct-r\nmetadata for partition bct created under filename meta_bct.txt\nmetadata for partition A_mb1-bootloader created under filename meta_A_mb1-bootloader.txt\nmetadata for partition B_mb1-bootloader created under filename meta_B_mb1-bootloader.txt\nProgram MB1 Header\nBR_BCT: metadata file meta_bct.txt opened\nBR_BCT: metadata from BCT metafile with key= pagesize and value= 2048\nBR_BCT: metadata from BCT metafile with key= blocksize and value= 32768\nBR_BCT: metadata from BCT metafile with key= basestartadx-A_2_0 and value= 1572864\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-B_2_0 and value= 18350080\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-A_0_3 and value= 0\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-B_0_3 and value= 55972986880\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-A_2_1 and value= 0\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-B_2_1 and value= 33554432\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata obtained from BCT metafile:pagesize= 2048 blocksize= 32768\nProgram MB1 Header\nBR_BCT: metadata file meta_bct.txt opened\nBR_BCT: metadata from BCT metafile with key= pagesize and value= 2048\nBR_BCT: metadata from BCT metafile with key= blocksize and value= 32768\nBR_BCT: metadata from BCT metafile with key= basestartadx-A_2_0 and value= 1572864\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-B_2_0 and value= 18350080\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-A_0_3 and value= 0\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-B_0_3 and value= 55972986880\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-A_2_1 and value= 0\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata from BCT metafile with key= basestartadx-B_2_1 and value= 33554432\nBR_BCT: metadata unrecognized key-value pair\nBR_BCT: metadata obtained from BCT metafile:pagesize= 2048 blocksize= 32768\n:[E]: QbFindAndCreateImages              : 1255: Error (Unknown) (0xff00)\n:[E]: Failed to exectute nvimagegen\n:[E]: QbCreatePartition                  : 1674: Error (Unknown) (0xff00)\n:[E]: failed to find and create images\nFailed to create partitions\n:[E]: nvimagegen                         :  892: Error (Unknown) (0xff00)\n:[E]: Creating Partition images failed\nfinish nvimagegen\nError Code ff00\nnvimagegen usage:\n\nnvimagegen --bct <BCT_FILE> --mb1bct <MB1_BCT_FILE> --cfg <CFG_FILE>\n  --bct <file>\n\tOptional, bct file(file), which will be updated with ODM-Data,\n\tPT StartInfo if provided.\n\tThis update happens in unsign/unencrypted section of BCT\n  --mb1bct <file>\n\tOptional, mb1_bct file(file), which will be updated with Firmware info.\n\tThis update happens in unsign/unencrypted section of MB1_BCT\n  --membct <file1> <file2> <file3> <file4>\n\tOptional, mem_bct file(file)\n  --chip <Chip ID>\n\tMandatory, Specifies chip id. The chip id of t18x is 0x18.\n  --chipver <Chip version>\n\tMandatory, Specifies chip version.\n  --cfg <file>\n\tOptional, input cfg file containing partition layout used while flashing\n  --pkc <file>\n\tOptional, pkc key used for signing the binary\n  --ekc <file>\n\tOptional, global common encryption key used for encrypting the binary\n  --showpt\n\tOptional, display the Partition Table on the screen.\n  --rcm\n\tOptional, create images need for RCM Boot.\n  --skipfs\n\tOptional, Skip filesystem partitions.\n  --part <partition name>\n\tOptional, input partition names and only the binary of the partitions\n\twill be generated.\n  --dtodmdata <odm-data parameter>\n\tOptional, Specifies the dt odm-data parameter\n  --signbin <file> <magic id>\n\tOptional, Specifies a binary for signing.\n  --parentcfg <file>\n\tOptional, parent cfg file location\n  --prefix <name>\n\tOptional, Name to be prepended to the images generated.\n  --guestcfg\n\tOptional, Flag to indicate that this is guest configuration along with guest id.\n  --setvmax <Board Vmax>\n\tOptional, Specifies the board max micro voltage.\n  --ecid\n\tOptional, ECID of target to be used in conjunction with --signbin.\n --skipchain\n\tOptional, skipchain don't generate chain specified\n", 'returncode': 255}
+[bootburnTegra-A]: [executeShellCommand(160)] : Sha saved in temp_buffer_file.bin.sha
+start nvimagegen
+arguments: /home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/qb_flashtools/nvimagegen --bct bct_BR.bct --mb1bct bct_MB1.bct --chip 0x19 --chipver A02 --membct membct_0.bct membct_1.bct membct_2.bct membct_3.bct --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg --man man_0b69eb40d14.txt --showpt
+Load MB1 BCT from file
+Name=bct Id=1 FileName=(null) Size=524288 IsPersistent=0
+Name=A_mb1-bootloader Id=2 FileName=mb1.bin Size=262144 IsPersistent=0
+Name=B_mb1-bootloader Id=3 FileName=mb1.bin Size=262144 IsPersistent=0
+Name=pt Id=4 FileName=(null) Size=524288 IsPersistent=0
+Name=A_qspi_chain Id=5 FileName=(null) Size=16777216 IsPersistent=0
+Name=B_qspi_chain Id=6 FileName=(null) Size=16777216 IsPersistent=0
+Name=A_emmc_chain Id=7 FileName=(null) Size=55972986880 IsPersistent=1
+Name=B_emmc_chain Id=8 FileName=(null) Size=55972986880 IsPersistent=1
+Name=pers-gos1 Id=9 FileName=(null) Size=4294967296 IsPersistent=1
+Name=pers-ota Id=10 FileName=/dev/null Size=268435456 IsPersistent=0
+Name=ota-pkg Id=11 FileName=(null) Size=172185616384 IsPersistent=1
+Name=gos1-ufs Id=12 FileName=(null) Size=76922486784 IsPersistent=1
+Name=A_qspi_1_chain Id=13 FileName=(null) Size=33554432 IsPersistent=1
+Name=B_qspi_1_chain Id=14 FileName=(null) Size=33554432 IsPersistent=1
+Initialized partitions successfully
+Load and validate BR BCT from file
+MB1 BCT not in top-level cfg, looking for sub cfgs that contain it
+Pregenerate PT for sub cfg with prefix A
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+start nvimagegen
+arguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1_sub1.cfg --prefix A_1 --chip 0x19 --chipver A02 --guestcfg 1 --ptonly
+Authenticate Group 1, NumberOfBins 3
+  PartName kernel
+  PartName kernel-dtb
+  PartName ramdisk
+Name=pt Id=1 FileName=(null) Size=262144 IsPersistent=0
+Name=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-linux-t186ref-release/nvidia/kernel/arch/arm64/boot/dts/tegra194-e3550-0001-b03-A-linux-driveav-vm1.dtb Size=262144 IsPersistent=0
+Partition 2 kernel-dtb: BootCompHdrPartId 3
+Name=kernel Id=3 FileName=(null) Size=18612224 IsPersistent=0
+Partition 3 kernel: BootCompHdrPartId 3
+Name=ramdisk Id=4 FileName=(null) Size=4194304 IsPersistent=0
+Partition 4 ramdisk: BootCompHdrPartId 3
+Name=gos1-gp1 Id=5 FileName=(null) Size=262144 IsPersistent=0
+Name=gos1-fs Id=6 FileName=(null) Size=32221167616 IsPersistent=0
+Name=gos1-gpt Id=7 FileName=(null) Size=262144 IsPersistent=0
+GPT Device size 32245809152. start location 32245792256
+Initialized partitions successfully
+Created PT successfully A_1_1_PT.bin
+Created partitions successfully
+finish nvimagegen
+Error Code 0
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+start nvimagegen
+arguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1_sub2.cfg --prefix A_2 --chip 0x19 --chipver A02 --guestcfg 2 --ptonly
+Authenticate Group 1, NumberOfBins 2
+  PartName kernel
+  PartName kernel-dtb
+Name=pt Id=1 FileName=(null) Size=262144 IsPersistent=0
+Name=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/hypervisor-t194/linux/e3550b03-t194a/t194-update-service.dtb Size=262144 IsPersistent=0
+Partition 2 kernel-dtb: BootCompHdrPartId 3
+Name=kernel Id=3 FileName=(null) Size=16777216 IsPersistent=0
+Partition 3 kernel: BootCompHdrPartId 3
+Initialized partitions successfully
+Created PT successfully A_2_1_PT.bin
+Created partitions successfully
+finish nvimagegen
+Error Code 0
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+start nvimagegen
+arguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --prefix A --chip 0x19 --chipver A02 --ptonly
+Authenticate Group 1, NumberOfBins 3
+  PartName mb1-bct
+  PartName spe-fw
+  PartName mb2-bootloader
+Authenticate Group 2, NumberOfBins 3
+  PartName mts-preboot
+  PartName mts-mce
+  PartName mts-bootpack
+Authenticate Group 3, NumberOfBins 3
+  PartName sce-fw
+  PartName secure-os
+  PartName rce-fw
+Authenticate Group 4, NumberOfBins 3
+  PartName bpmp-fw
+  PartName cpu-bootloader
+  PartName bpmp-fw-dtb
+Name=pt Id=1 FileName=(null) Size=262144 IsPersistent=0
+Name=mb1-bct Id=2 FileName=(null) Size=262144 IsPersistent=0
+Partition 2 mb1-bct: BootCompHdrPartId 2
+Name=mem-bct Id=3 FileName=(null) Size=262144 IsPersistent=0
+Name=spe-fw Id=4 FileName=/home/waqara/qnx/firmware-t19x/spe/t194/spe.bin Size=262144 IsPersistent=0
+Partition 4 spe-fw: BootCompHdrPartId 2
+Name=mb2-bootloader Id=5 FileName=nvtboot.bin Size=262144 IsPersistent=0
+Partition 5 mb2-bootloader: BootCompHdrPartId 2
+Name=mts-preboot Id=6 FileName=preboot_c10_grp.bin Size=262144 IsPersistent=0
+Partition 6 mts-preboot: BootCompHdrPartId 6
+Name=mts-mce Id=7 FileName=mce_c10_grp.bin Size=524288 IsPersistent=0
+Partition 7 mts-mce: BootCompHdrPartId 6
+Name=mts-bootpack Id=8 FileName=mts_c10_cr.bin Size=4194304 IsPersistent=0
+Partition 8 mts-bootpack: BootCompHdrPartId 6
+Name=cpu-bootloader Id=9 FileName=qb_cpu.bin Size=524288 IsPersistent=0
+Partition 9 cpu-bootloader: BootCompHdrPartId 11
+Name=secure-os Id=10 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/trusty.t194//tos.img Size=3145728 IsPersistent=0
+Partition 10 secure-os: BootCompHdrPartId 13
+Name=bpmp-fw Id=11 FileName=/home/waqara/qnx/firmware-t19x/bpmp/t194/bpmp-2.bin Size=1048576 IsPersistent=0
+Partition 11 bpmp-fw: BootCompHdrPartId 11
+Name=bpmp-fw-dtb Id=12 FileName=bpmp.dtb Size=786432 IsPersistent=0
+Partition 12 bpmp-fw-dtb: BootCompHdrPartId 11
+Name=sce-fw Id=13 FileName=/home/waqara/qnx/firmware-t19x/sce/t194/sce-fw.bin Size=524288 IsPersistent=0
+Partition 13 sce-fw: BootCompHdrPartId 13
+Name=rce-fw Id=14 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/camera/rce_fw/camera-rtcpu-t194-rce-hv-single-vm.img Size=1048576 IsPersistent=0
+Partition 14 rce-fw: BootCompHdrPartId 13
+Name=eks Id=15 FileName=/home/waqara/qnx/embedded/tools-t19x/boards/t194ref/trusty.t194/eks_nokey.dat Size=262144 IsPersistent=0
+Name=gos1 Id=16 FileName=(null) Size=32245809152 IsPersistent=0
+Name=kernel Id=17 FileName=(null) Size=10485760 IsPersistent=0
+Name=safety Id=18 FileName=(null) Size=18874368 IsPersistent=1
+Name=update Id=19 FileName=(null) Size=17825792 IsPersistent=0
+Name=usr1-ota Id=20 FileName=(null) Size=1073741824 IsPersistent=1
+Name=usr1-safety Id=21 FileName=(null) Size=4294967296 IsPersistent=1
+Name=usr2-ota Id=22 FileName=(null) Size=1073741824 IsPersistent=1
+Name=gos_norfs-dummy Id=23 FileName=(null) Size=16777216 IsPersistent=1
+Initialized partitions successfully
+Created PT successfully A_1_PT.bin
+Created partitions successfully
+finish nvimagegen
+Error Code 0
+Pregenerate PT for sub cfg with prefix B
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+start nvimagegen
+arguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2_sub1.cfg --prefix B_1 --chip 0x19 --chipver A02 --guestcfg 1 --ptonly
+Authenticate Group 1, NumberOfBins 3
+  PartName kernel
+  PartName kernel-dtb
+  PartName ramdisk
+Name=pt Id=1 FileName=(null) Size=262144 IsPersistent=0
+Name=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-linux-t186ref-release/nvidia/kernel/arch/arm64/boot/dts/tegra194-e3550-0001-b03-A-linux-driveav-vm1.dtb Size=262144 IsPersistent=0
+Partition 2 kernel-dtb: BootCompHdrPartId 3
+Name=kernel Id=3 FileName=(null) Size=18612224 IsPersistent=0
+Partition 3 kernel: BootCompHdrPartId 3
+Name=ramdisk Id=4 FileName=(null) Size=4194304 IsPersistent=0
+Partition 4 ramdisk: BootCompHdrPartId 3
+Name=gos1-gp1 Id=5 FileName=(null) Size=262144 IsPersistent=0
+Name=gos1-fs Id=6 FileName=(null) Size=32221167616 IsPersistent=0
+Name=gos1-gpt Id=7 FileName=(null) Size=262144 IsPersistent=0
+GPT Device size 32245809152. start location 32245792256
+Initialized partitions successfully
+Created PT successfully B_1_1_PT.bin
+Created partitions successfully
+finish nvimagegen
+Error Code 0
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+start nvimagegen
+arguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2_sub2.cfg --prefix B_2 --chip 0x19 --chipver A02 --guestcfg 2 --ptonly
+Authenticate Group 1, NumberOfBins 2
+  PartName kernel
+  PartName kernel-dtb
+Name=pt Id=1 FileName=(null) Size=262144 IsPersistent=0
+Name=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/hypervisor-t194/linux/e3550b03-t194a/t194-update-service.dtb Size=262144 IsPersistent=0
+Partition 2 kernel-dtb: BootCompHdrPartId 3
+Name=kernel Id=3 FileName=(null) Size=16777216 IsPersistent=0
+Partition 3 kernel: BootCompHdrPartId 3
+Initialized partitions successfully
+Created PT successfully B_2_1_PT.bin
+Created partitions successfully
+finish nvimagegen
+Error Code 0
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+start nvimagegen
+arguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub2.cfg --prefix B --chip 0x19 --chipver A02 --ptonly
+Authenticate Group 1, NumberOfBins 3
+  PartName mb1-bct
+  PartName spe-fw
+  PartName mb2-bootloader
+Authenticate Group 2, NumberOfBins 3
+  PartName mts-preboot
+  PartName mts-mce
+  PartName mts-bootpack
+Authenticate Group 3, NumberOfBins 3
+  PartName sce-fw
+  PartName secure-os
+  PartName rce-fw
+Authenticate Group 4, NumberOfBins 3
+  PartName bpmp-fw
+  PartName cpu-bootloader
+  PartName bpmp-fw-dtb
+Name=pt Id=1 FileName=(null) Size=262144 IsPersistent=0
+Name=mb1-bct Id=2 FileName=(null) Size=262144 IsPersistent=0
+Partition 2 mb1-bct: BootCompHdrPartId 2
+Name=mem-bct Id=3 FileName=(null) Size=262144 IsPersistent=0
+Name=spe-fw Id=4 FileName=/home/waqara/qnx/firmware-t19x/spe/t194/spe.bin Size=262144 IsPersistent=0
+Partition 4 spe-fw: BootCompHdrPartId 2
+Name=mb2-bootloader Id=5 FileName=nvtboot.bin Size=262144 IsPersistent=0
+Partition 5 mb2-bootloader: BootCompHdrPartId 2
+Name=mts-preboot Id=6 FileName=preboot_c10_grp.bin Size=262144 IsPersistent=0
+Partition 6 mts-preboot: BootCompHdrPartId 6
+Name=mts-mce Id=7 FileName=mce_c10_grp.bin Size=524288 IsPersistent=0
+Partition 7 mts-mce: BootCompHdrPartId 6
+Name=mts-bootpack Id=8 FileName=mts_c10_cr.bin Size=4194304 IsPersistent=0
+Partition 8 mts-bootpack: BootCompHdrPartId 6
+Name=cpu-bootloader Id=9 FileName=qb_cpu.bin Size=524288 IsPersistent=0
+Partition 9 cpu-bootloader: BootCompHdrPartId 11
+Name=secure-os Id=10 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/trusty.t194//tos.img Size=3145728 IsPersistent=0
+Partition 10 secure-os: BootCompHdrPartId 13
+Name=bpmp-fw Id=11 FileName=/home/waqara/qnx/firmware-t19x/bpmp/t194/bpmp-2.bin Size=1048576 IsPersistent=0
+Partition 11 bpmp-fw: BootCompHdrPartId 11
+Name=bpmp-fw-dtb Id=12 FileName=bpmp.dtb Size=786432 IsPersistent=0
+Partition 12 bpmp-fw-dtb: BootCompHdrPartId 11
+Name=sce-fw Id=13 FileName=/home/waqara/qnx/firmware-t19x/sce/t194/sce-fw.bin Size=524288 IsPersistent=0
+Partition 13 sce-fw: BootCompHdrPartId 13
+Name=rce-fw Id=14 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/camera/rce_fw/camera-rtcpu-t194-rce-hv-single-vm.img Size=1048576 IsPersistent=0
+Partition 14 rce-fw: BootCompHdrPartId 13
+Name=eks Id=15 FileName=/home/waqara/qnx/embedded/tools-t19x/boards/t194ref/trusty.t194/eks_nokey.dat Size=262144 IsPersistent=0
+Name=gos1 Id=16 FileName=(null) Size=32245809152 IsPersistent=0
+Name=kernel Id=17 FileName=(null) Size=10485760 IsPersistent=0
+Name=safety Id=18 FileName=(null) Size=18874368 IsPersistent=1
+Name=update Id=19 FileName=(null) Size=17825792 IsPersistent=0
+Name=usr1-ota Id=20 FileName=(null) Size=1073741824 IsPersistent=1
+Name=usr1-safety Id=21 FileName=(null) Size=4294967296 IsPersistent=1
+Name=usr2-ota Id=22 FileName=(null) Size=1073741824 IsPersistent=1
+Name=gos_norfs-dummy Id=23 FileName=(null) Size=16777216 IsPersistent=1
+Initialized partitions successfully
+Created PT successfully B_1_PT.bin
+Created partitions successfully
+finish nvimagegen
+Error Code 0
+Program MB1 BCT
+MB1_BCT: Checking sub cfgs for partitions
+Found primary sub cfg
+Found valid PT at copy #8
+:[I]: Successfully loaded PT from file A_1_PT.bin
+checking sub cfg's partition 1 name=pt adx= 0size= 262144 IsPersistent=0
+checking sub cfg's partition 2 name=mb1-bct adx= 262144size= 262144 IsPersistent=0
+checking sub cfg's partition 3 name=mem-bct adx= 524288size= 262144 IsPersistent=0
+MB1_BCT: localadx= 524288, globaladx= 2097152, startblock= 4096 size= 262144
+checking sub cfg's partition 4 name=spe-fw adx= 786432size= 262144 IsPersistent=0
+MB1_BCT: selected FW field for partition 19
+MB1_BCT: localadx= 786432, globaladx= 2359296, startblock= 4608 size= 262144
+checking sub cfg's partition 5 name=mb2-bootloader adx= 1048576size= 262144 IsPersistent=0
+MB1_BCT: selected FW field for partition 25
+MB1_BCT: localadx= 1048576, globaladx= 2621440, startblock= 5120 size= 262144
+checking sub cfg's partition 6 name=mts-preboot adx= 1310720size= 262144 IsPersistent=0
+MB1_BCT: selected FW field for partition 20
+MB1_BCT: localadx= 1310720, globaladx= 2883584, startblock= 5632 size= 262144
+checking sub cfg's partition 7 name=mts-mce adx= 1572864size= 524288 IsPersistent=0
+MB1_BCT: selected FW field for partition 36
+MB1_BCT: localadx= 1572864, globaladx= 3145728, startblock= 6144 size= 524288
+checking sub cfg's partition 8 name=mts-bootpack adx= 2097152size= 4194304 IsPersistent=0
+MB1_BCT: selected FW field for partition 21
+MB1_BCT: localadx= 2097152, globaladx= 3670016, startblock= 7168 size= 4194304
+checking sub cfg's partition 9 name=cpu-bootloader adx= 6291456size= 524288 IsPersistent=0
+checking sub cfg's partition 10 name=secure-os adx= 6815744size= 3145728 IsPersistent=0
+checking sub cfg's partition 11 name=bpmp-fw adx= 9961472size= 1048576 IsPersistent=0
+checking sub cfg's partition 12 name=bpmp-fw-dtb adx= 11010048size= 786432 IsPersistent=0
+checking sub cfg's partition 13 name=sce-fw adx= 11796480size= 524288 IsPersistent=0
+checking sub cfg's partition 14 name=rce-fw adx= 12320768size= 1048576 IsPersistent=0
+checking sub cfg's partition 15 name=eks adx= 13369344size= 262144 IsPersistent=0
+checking sub cfg's partition 16 name=gos1 adx= 0size= 32245809152 IsPersistent=0
+checking sub cfg's partition 17 name=kernel adx= 32245809152size= 10485760 IsPersistent=0
+checking sub cfg's partition 18 name=safety adx= 32256294912size= 18874368 IsPersistent=1
+checking sub cfg's partition 19 name=update adx= 32275169280size= 17825792 IsPersistent=0
+checking sub cfg's partition 20 name=usr1-ota adx= 32292995072size= 1073741824 IsPersistent=1
+checking sub cfg's partition 21 name=usr1-safety adx= 33366736896size= 4294967296 IsPersistent=1
+checking sub cfg's partition 22 name=usr2-ota adx= 37661704192size= 1073741824 IsPersistent=1
+checking sub cfg's partition 23 name=gos_norfs-dummy adx= 0size= 16777216 IsPersistent=1
+Found recovery sub cfg
+Found valid PT at copy #8
+:[I]: Successfully loaded PT from file B_1_PT.bin
+checking sub cfg's partition 1 name=pt adx= 0size= 262144 IsPersistent=0
+checking sub cfg's partition 2 name=mb1-bct adx= 262144size= 262144 IsPersistent=0
+checking sub cfg's partition 3 name=mem-bct adx= 524288size= 262144 IsPersistent=0
+MB1_BCT: localadx= 524288, globaladx= 18874368, startblock= 36864 size= 262144
+checking sub cfg's partition 4 name=spe-fw adx= 786432size= 262144 IsPersistent=0
+MB1_BCT: selected FW field for partition 19
+MB1_BCT: localadx= 786432, globaladx= 19136512, startblock= 37376 size= 262144
+checking sub cfg's partition 5 name=mb2-bootloader adx= 1048576size= 262144 IsPersistent=0
+MB1_BCT: selected FW field for partition 25
+MB1_BCT: localadx= 1048576, globaladx= 19398656, startblock= 37888 size= 262144
+checking sub cfg's partition 6 name=mts-preboot adx= 1310720size= 262144 IsPersistent=0
+MB1_BCT: selected FW field for partition 20
+MB1_BCT: localadx= 1310720, globaladx= 19660800, startblock= 38400 size= 262144
+checking sub cfg's partition 7 name=mts-mce adx= 1572864size= 524288 IsPersistent=0
+MB1_BCT: selected FW field for partition 36
+MB1_BCT: localadx= 1572864, globaladx= 19922944, startblock= 38912 siSha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+Sha saved in temp_buffer_file.sha
+start nvimagegen
+arguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1_sub1.cfg --prefix A_1 --chip 0x19 --chipver A02 --mb1bct bct_MB1.bct --guestcfg 1 --showpt --man man_A_1.txt
+Load MB1 BCT from file
+Authenticate Group 1, NumberOfBins 3
+  PartName kernel
+  PartName kernel-dtb
+  PartName ramdisk
+Name=pt Id=1 FileName=(null) Size=262144 IsPersistent=0
+Name=kernel-dtb Id=2 FileName=/home/waqara/qnx/out/embedded-linux-t186ref-release/nvidia/kernel/arch/arm64/boot/dts/tegra194-e3550-0001-b03-A-linux-driveav-vm1.dtb Size=262144 IsPersistent=0
+Partition 2 kernel-dtb: BootCompHdrPartId 3
+Name=kernel Id=3 FileName=(null) Size=18612224 IsPersistent=0
+Partition 3 kernel: BootCompHdrPartId 3
+Name=ramdisk Id=4 FileName=(null) Size=4194304 IsPersistent=0
+Partition 4 ramdisk: BootCompHdrPartId 3
+Name=gos1-gp1 Id=5 FileName=(null) Size=262144 IsPersistent=0
+Name=gos1-fs Id=6 FileName=(null) Size=32221167616 IsPersistent=0
+Name=gos1-gpt Id=7 FileName=(null) Size=262144 IsPersistent=0
+GPT Device size 32245809152. start location 32245792256
+:[D]: ratchet value for kernel-dtb is 0 at index 40
+:[D]: ratchet value for kernel is 0 at index 38
+:[D]: ratchet value for ramdisk is 0 at index 39
+Initialized partitions successfully
+GP1 found on 0 deviceId 3 Instance
+Creating GPT...Done
+:[E]: UpdateKernelDtb                    :  687: Error FileNotFound (0x19)
+:[E]: 
+Err: DTB file /home/waqara/qnx/out/embedded-linux-t186ref-release/nvidia/kernel/arch/arm64/boot/dts/tegra194-e3550-0001-b03-A-linux-driveav-vm1.dtb for partition kernel-dtb was not found.  Make sure 
+the path or name of DTB file is correct in the config file
+
+UpdateKernelDtb: Failed to update kernel dtb, err: 0x19
+:[E]: QbFindAndCreateImages              : 1281: Error FileNotFound (0x19)
+:[E]: Failed to update kernel DTB
+:[E]: QbCreatePartition                  : 1674: Error FileNotFound (0x19)
+:[E]: failed to find and create images
+Failed to create partitions
+:[E]: nvimagegen                         :  892: Error FileNotFound (0x19)
+:[E]: Creating Partition images failed
+finish nvimagegen
+Error Code 19
+nvimagegen usage:
+
+nvimagegen --bct <BCT_FILE> --mb1bct <MB1_BCT_FILE> --cfg <CFG_FILE>
+  --bct <file>
+	Optional, bct file(file), which will be updated with ODM-Data,
+	PT StartInfo if provided.
+	This update happens in unsign/unencrypted section of BCT
+  --mb1bct <file>
+	Optional, mb1_bct file(file), which will be updated with Firmware info.
+	This update happens in unsign/unencrypted section of MB1_BCT
+  --membct <file1> <file2> <file3> <file4>
+	Optional, mem_bct file(file)
+  --chip <Chip ID>
+	Mandatory, Specifies chip id. The chip id of t18x is 0x18.
+  --chipver <Chip version>
+	Mandatory, Specifies chip version.
+  --cfg <file>
+	Optional, input cfg file containing partition layout used while flashing
+  --pkc <file>
+	Optional, pkc key used for signing the binary
+  --ekc <file>
+	Optional, global common encryption key used for encrypting the binary
+  --showpt
+	Optional, display the Partition Table on the screen.
+  --rcm
+	Optional, create images need for RCM Boot.
+  --skipfs
+	Optional, Skip filesystem partitions.
+  --part <partition name>
+	Optional, input partition names and only the binary of the partitions
+	will be generated.
+  --dtodmdata <odm-data parameter>
+	Optional, Specifies the dt odm-data parameter
+  --signbin <file> <magic id>
+	Optional, Specifies a binary for signing.
+  --parentcfg <file>
+	Optional, parent cfg file location
+  --prefix <name>
+	Optional, Name to be prepended to the images generated.
+  --guestcfg
+	Optional, Flag to indicate that this is guest configuration along with guest id.
+  --setvmax <Board Vmax>
+	Optional, Specifies the board max micro voltage.
+  --ecid
+	Optional, ECID of target to be used in conjunction with --signbin.
+ --skipchain
+	Optional, skipchain don't generate chain specified
+start nvimagegen
+arguments: ./nvimagegen --parentcfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi.cfg --cfg /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/__temp/Tegra-A-f8a6b15d2f0/flash-images/tmp_global_storage_qspi_sub1.cfg --prefix A --chip 0x19 --chipver A02 --mb1bct bct_MB1.bct --membct membct_0.bct membct_1.bct membct_2.bct membct_3.bct --showpt --man man_A.txt
+Load MB1 BCT from file
+Authenticate Group 1, NumberOfBins 3
+  PartName mb1-bct
+  PartName spe-fw
+  PartName mb2-bootloader
+Authenticate Group 2, NumberOfBins 3
+  PartName mts-preboot
+  PartName mts-mce
+  PartName mts-bootpack
+Authenticate Group 3, NumberOfBins 3
+  PartName sce-fw
+  PartName secure-os
+  PartName rce-fw
+Authenticate Group 4, NumberOfBins 3
+  PartName bpmp-fw
+  PartName cpu-bootloader
+  PartName bpmp-fw-dtb
+Name=pt Id=1 FileName=(null) Size=262144 IsPersistent=0
+Name=mb1-bct Id=2 FileName=(null) Size=262144 IsPersistent=0
+Partition 2 mb1-bct: BootCompHdrPartId 2
+Name=mem-bct Id=3 FileName=(null) Size=262144 IsPersistent=0
+Name=spe-fw Id=4 FileName=/home/waqara/qnx/firmware-t19x/spe/t194/spe.bin Size=262144 IsPersistent=0
+Partition 4 spe-fw: BootCompHdrPartId 2
+Name=mb2-bootloader Id=5 FileName=nvtboot.bin Size=262144 IsPersistent=0
+Partition 5 mb2-bootloader: BootCompHdrPartId 2
+Name=mts-preboot Id=6 FileName=preboot_c10_grp.bin Size=262144 IsPersistent=0
+Partition 6 mts-preboot: BootCompHdrPartId 6
+Name=mts-mce Id=7 FileName=mce_c10_grp.bin Size=524288 IsPersistent=0
+Partition 7 mts-mce: BootCompHdrPartId 6
+Name=mts-bootpack Id=8 FileName=mts_c10_cr.bin Size=4194304 IsPersistent=0
+Partition 8 mts-bootpack: BootCompHdrPartId 6
+Name=cpu-bootloader Id=9 FileName=qb_cpu.bin Size=524288 IsPersistent=0
+Partition 9 cpu-bootloader: BootCompHdrPartId 11
+Name=secure-os Id=10 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/trusty.t194//tos.img Size=3145728 IsPersistent=0
+Partition 10 secure-os: BootCompHdrPartId 13
+Name=bpmp-fw Id=11 FileName=/home/waqara/qnx/firmware-t19x/bpmp/t194/bpmp-2.bin Size=1048576 IsPersistent=0
+Partition 11 bpmp-fw: BootCompHdrPartId 11
+Name=bpmp-fw-dtb Id=12 FileName=bpmp.dtb Size=786432 IsPersistent=0
+Partition 12 bpmp-fw-dtb: BootCompHdrPartId 11
+Name=sce-fw Id=13 FileName=/home/waqara/qnx/firmware-t19x/sce/t194/sce-fw.bin Size=524288 IsPersistent=0
+Partition 13 sce-fw: BootCompHdrPartId 13
+Name=rce-fw Id=14 FileName=/home/waqara/qnx/out/embedded-foundation-t186ref-release-none/nvidia/camera/rce_fw/camera-rtcpu-t194-rce-hv-single-vm.img Size=1048576 IsPersistent=0
+Partition 14 rce-fw: BootCompHdrPartId 13
+Name=eks Id=15 FileName=/home/waqara/qnx/embedded/tools-t19x/boards/t194ref/trusty.t194/eks_nokey.dat Size=262144 IsPersistent=0
+Name=gos1 Id=16 FileName=(null) Size=32245809152 IsPersistent=0
+Name=kernel Id=17 FileName=(null) Size=10485760 IsPersistent=0
+Name=safety Id=18 FileName=(null) Size=18874368 IsPersistent=1
+Name=update Id=19 FileName=(null) Size=17825792 IsPersistent=0
+Name=usr1-ota Id=20 FileName=(null) Size=1073741824 IsPersistent=1
+Name=usr1-safety Id=21 FileName=(null) Size=4294967296 IsPersistent=1
+Name=usr2-ota Id=22 FileName=(null) Size=1073741824 IsPersistent=1
+Name=gos_norfs-dummy Id=23 FileName=(null) Size=16777216 IsPersistent=1
+:[D]: ratchet value for mb1-bct is 0 at index 1
+:[D]: ratchet value for mem-bct is 0 at index 7
+:[D]: ratchet value for spe-fw is 0 at index 2
+:[D]: ratchet value for mb2-bootloader is 0 at index 6
+:[D]: ratchet value for cpu-bootloader is 0 at index 11
+:[D]: ratchet value for secure-os is 0 at index 12
+:[D]: ratchet value for bpmp-fw is 0 at index 14
+:[D]: ratchet value for bpmp-fw-dtb is 0 at index 15
+:[D]: ratchet value for sce-fw is 0 at index 16
+:[D]: ratchet value for rce-fw is 0 at index 17
+:[D]: ratchet value for eks is 0 at index 13
+:[D]: ratchet value for kernel is 0 at index 30
+Initialized partitions successfully
+:[E]: QbFindAndCreateImages              : 1255: Error (Unknown) (0xff00)
+:[E]: Failed to exectute nvimagegen
+:[E]: QbCreatePartition                  : 1674: Error (Unknown) (0xff00)
+:[E]: failed to find and create images
+Failed to create partitions
+:[E]: nvimagegen                         :  892: Error (Unknown) (0xff00)
+:[E]: Creating Partition images failed
+finish nvimagegen
+Error Code ff00
+nvimagegen usage:
+
+nvimagegen --bct <BCT_FILE> --mb1bct <MB1_BCT_FILE> --cfg <CFG_FILE>
+  --bct <file>
+	Optional, bct file(file), which will be updated with ODM-Data,
+	PT StartInfo if provided.
+	This update happens in unsign/unencrypted section of BCT
+  --mb1bct <file>
+	Optional, mb1_bct file(file), which will be updated with Firmware info.
+	This update happens in unsign/unencrypted section of MB1_BCT
+  --membct <file1> <file2> <file3> <file4>
+	Optional, mem_bct file(file)
+  --chip <Chip ID>
+	Mandatory, Specifies chip id. The chip id of t18x is 0x18.
+  --chipver <Chip version>
+	Mandatory, Specifies chip version.
+  --cfg <file>
+	Optional, input cfg file containing partition layout used while flashing
+  --pkc <file>
+	Optional, pkc key used for signing the binary
+  --ekc <file>
+	Optional, global common encryption key used for encrypting the binary
+  --showpt
+	Optional, display the Partition Table on the screen.
+  --rcm
+	Optional, create images need for RCM Boot.
+  --skipfs
+	Optional, Skip filesystem partitions.
+  --part <partition name>
+	Optional, input partition names and only the binary of the partitions
+	will be generated.
+  --dtodmdata <odm-data parameter>
+	Optional, Specifies the dt odm-data parameter
+  --signbin <file> <magic id>
+	Optional, Specifies a binary for signing.
+  --parentcfg <file>
+	Optional, parent cfg file location
+  --prefix <name>
+	Optional, Name to be prepended to the images generated.
+  --guestcfg
+	Optional, Flag to indicate that this is guest configuration along with guest id.
+  --setvmax <Board Vmax>
+	Optional, Specifies the board max micro voltage.
+  --ecid
+	Optional, ECID of target to be used in conjunction with --signbin.
+ --skipchain
+	Optional, skipchain don't generate chain specified
+ze= 524288
+checking sub cfg's partition 8 name=mts-bootpack adx= 2097152size= 4194304 IsPersistent=0
+MB1_BCT: selected FW field for partition 21
+MB1_BCT: localadx= 2097152, globaladx= 20447232, startblock= 39936 size= 4194304
+checking sub cfg's partition 9 name=cpu-bootloader adx= 6291456size= 524288 IsPersistent=0
+checking sub cfg's partition 10 name=secure-os adx= 6815744size= 3145728 IsPersistent=0
+checking sub cfg's partition 11 name=bpmp-fw adx= 9961472size= 1048576 IsPersistent=0
+checking sub cfg's partition 12 name=bpmp-fw-dtb adx= 11010048size= 786432 IsPersistent=0
+checking sub cfg's partition 13 name=sce-fw adx= 11796480size= 524288 IsPersistent=0
+checking sub cfg's partition 14 name=rce-fw adx= 12320768size= 1048576 IsPersistent=0
+checking sub cfg's partition 15 name=eks adx= 13369344size= 262144 IsPersistent=0
+checking sub cfg's partition 16 name=gos1 adx= 0size= 32245809152 IsPersistent=0
+checking sub cfg's partition 17 name=kernel adx= 32245809152size= 10485760 IsPersistent=0
+checking sub cfg's partition 18 name=safety adx= 32256294912size= 18874368 IsPersistent=1
+checking sub cfg's partition 19 name=update adx= 32275169280size= 17825792 IsPersistent=0
+checking sub cfg's partition 20 name=usr1-ota adx= 32292995072size= 1073741824 IsPersistent=1
+checking sub cfg's partition 21 name=usr1-safety adx= 33366736896size= 4294967296 IsPersistent=1
+checking sub cfg's partition 22 name=usr2-ota adx= 37661704192size= 1073741824 IsPersistent=1
+checking sub cfg's partition 23 name=gos_norfs-dummy adx= 0size= 16777216 IsPersistent=1
+Updating MB1 BCT to file
+:[I]: QbPartMgrGetIdByName: Could not find a match for given partition name: mb1-bct
+:[I]: QbPartMgrGetIdByName: Could not find a match for given partition name: mb1-bct-r
+metadata for partition bct created under filename meta_bct.txt
+metadata for partition A_mb1-bootloader created under filename meta_A_mb1-bootloader.txt
+metadata for partition B_mb1-bootloader created under filename meta_B_mb1-bootloader.txt
+Program MB1 Header
+BR_BCT: metadata file meta_bct.txt opened
+BR_BCT: metadata from BCT metafile with key= pagesize and value= 2048
+BR_BCT: metadata from BCT metafile with key= blocksize and value= 32768
+BR_BCT: metadata from BCT metafile with key= basestartadx-A_2_0 and value= 1572864
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-B_2_0 and value= 18350080
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-A_0_3 and value= 0
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-B_0_3 and value= 55972986880
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-A_2_1 and value= 0
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-B_2_1 and value= 33554432
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata obtained from BCT metafile:pagesize= 2048 blocksize= 32768
+Program MB1 Header
+BR_BCT: metadata file meta_bct.txt opened
+BR_BCT: metadata from BCT metafile with key= pagesize and value= 2048
+BR_BCT: metadata from BCT metafile with key= blocksize and value= 32768
+BR_BCT: metadata from BCT metafile with key= basestartadx-A_2_0 and value= 1572864
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-B_2_0 and value= 18350080
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-A_0_3 and value= 0
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-B_0_3 and value= 55972986880
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-A_2_1 and value= 0
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata from BCT metafile with key= basestartadx-B_2_1 and value= 33554432
+BR_BCT: metadata unrecognized key-value pair
+BR_BCT: metadata obtained from BCT metafile:pagesize= 2048 blocksize= 32768
+:[E]: QbFindAndCreateImages              : 1255: Error (Unknown) (0xff00)
+:[E]: Failed to exectute nvimagegen
+:[E]: QbCreatePartition                  : 1674: Error (Unknown) (0xff00)
+:[E]: failed to find and create images
+Failed to create partitions
+:[E]: nvimagegen                         :  892: Error (Unknown) (0xff00)
+:[E]: Creating Partition images failed
+finish nvimagegen
+Error Code ff00
+nvimagegen usage:
+
+nvimagegen --bct <BCT_FILE> --mb1bct <MB1_BCT_FILE> --cfg <CFG_FILE>
+  --bct <file>
+	Optional, bct file(file), which will be updated with ODM-Data,
+	PT StartInfo if provided.
+	This update happens in unsign/unencrypted section of BCT
+  --mb1bct <file>
+	Optional, mb1_bct file(file), which will be updated with Firmware info.
+	This update happens in unsign/unencrypted section of MB1_BCT
+  --membct <file1> <file2> <file3> <file4>
+	Optional, mem_bct file(file)
+  --chip <Chip ID>
+	Mandatory, Specifies chip id. The chip id of t18x is 0x18.
+  --chipver <Chip version>
+	Mandatory, Specifies chip version.
+  --cfg <file>
+	Optional, input cfg file containing partition layout used while flashing
+  --pkc <file>
+	Optional, pkc key used for signing the binary
+  --ekc <file>
+	Optional, global common encryption key used for encrypting the binary
+  --showpt
+	Optional, display the Partition Table on the screen.
+  --rcm
+	Optional, create images need for RCM Boot.
+  --skipfs
+	Optional, Skip filesystem partitions.
+  --part <partition name>
+	Optional, input partition names and only the binary of the partitions
+	will be generated.
+  --dtodmdata <odm-data parameter>
+	Optional, Specifies the dt odm-data parameter
+  --signbin <file> <magic id>
+	Optional, Specifies a binary for signing.
+  --parentcfg <file>
+	Optional, parent cfg file location
+  --prefix <name>
+	Optional, Name to be prepended to the images generated.
+  --guestcfg
+	Optional, Flag to indicate that this is guest configuration along with guest id.
+  --setvmax <Board Vmax>
+	Optional, Specifies the board max micro voltage.
+  --ecid
+	Optional, ECID of target to be used in conjunction with --signbin.
+ --skipchain
+	Optional, skipchain don't generate chain specified
+
+[bootburnTegra-A]: [executeShellCommand(163)] : 255
+Traceback (most recent call last):
+  File "./bootburn.py", line 138, in bootburn_active
+    bootburnLib.CreateFlashImages(targetConfig.f_FlashCfg)
+  File "/home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/bootburn_lib.py", line 2418, in CreateFlashImages
+    self.GenerateImage(configFiles, l_Operation, p_TempDumpPath)
+  File "/home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/bootburn_lib.py", line 2262, in GenerateImage
+    AbnormalTermination("s_ERROR_TOOL_NVIMAGEGEN", nverror.NvError_NvImagegen)
+  File "/home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py/flashtools_nverror.py", line 247, in AbnormalTermination
+    raise OSError(errorCode)
+OSError: 53
+command line used was:
+['./bootburn.py', '-b', 'e3550b03-t194a', '-B', 'qspi', '-M']
+
+
+[01;31ms_ERROR_TOOL_NVIMAGEGEN[0m
+
+[01;31m:[E]: UpdateKernelDtb                    :  687: Error FileNotFound (0x19)[0m
+[01;31m:[E]: [0m
+[01;31m:[E]: QbFindAndCreateImages              : 1281: Error FileNotFound (0x19)[0m
+[01;31m:[E]: Failed to update kernel DTB[0m
+[01;31m:[E]: QbCreatePartition                  : 1674: Error FileNotFound (0x19)[0m
+[01;31m:[E]: failed to find and create images[0m
+[01;31m:[E]: nvimagegen                         :  892: Error FileNotFound (0x19)[0m
+[01;31m:[E]: Creating Partition images failed[0m
+[01;31m:[E]: QbFindAndCreateImages              : 1255: Error (Unknown) (0xff00)[0m
+[01;31m:[E]: Failed to exectute nvimagegen[0m
+[01;31m:[E]: QbCreatePartition                  : 1674: Error (Unknown) (0xff00)[0m
+[01;31m:[E]: failed to find and create images[0m
+[01;31m:[E]: nvimagegen                         :  892: Error (Unknown) (0xff00)[0m
+[01;31m:[E]: Creating Partition images failed[0m
+[01;31m:[E]: QbFindAndCreateImages              : 1255: Error (Unknown) (0xff00)[0m
+[01;31m:[E]: Failed to exectute nvimagegen[0m
+[01;31m:[E]: QbCreatePartition                  : 1674: Error (Unknown) (0xff00)[0m
+[01;31m:[E]: failed to find and create images[0m
+[01;31m:[E]: nvimagegen                         :  892: Error (Unknown) (0xff00)[0m
+[01;31m:[E]: Creating Partition images failed[0m
+
+
+[01;31mException 53 raised in bootburn_active [0m
+returning to directory /home/waqara/qnx/embedded/tools-t19x/scripts/t194_bootburn_py
+Cleaning up ... 
+    Cleaning temp dir
+*** error:  COMMAND FAILED! ***
